@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DarkerGray"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    
+    <!-- Dec output -->
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:paddingLeft="10dp"
+	    android:paddingBottom="10dp"
+	    android:paddingRight="10dp"
+	    android:background="@color/win8_lime" >
+	
+	        <TextView
+	            android:id="@+id/dec_label"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/white"
+	            android:text="@string/text_dec"
+	            android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	        <TextView
+	            android:id="@+id/output_dec"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="right"
+	            android:background="@color/white"
+	            android:clickable="true"
+	            android:gravity="right"
+	            android:onClick="onTextClick"
+	            android:padding="5dp"
+	            android:text="@string/text_zero"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	</LinearLayout>
+
+    <!-- Bin output -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/win8_blue" >
+
+        <TextView
+            android:id="@+id/bin_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_bin"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/output_bin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@color/LightGray"
+            android:clickable="true"
+            android:gravity="right"
+            android:onClick="onTextClick"
+            android:padding="5dp"
+            android:text="@string/text_zero"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+    
+    <!-- Hex output -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/win8_yellow" >
+
+        <TextView
+            android:id="@+id/hex_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_hex"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/output_hex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@color/LightGray"
+            android:clickable="true"
+            android:gravity="right"
+            android:onClick="onTextClick"
+            android:padding="5dp"
+            android:text="@string/text_zero"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+    
+    <!-- Oct output -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/win8_red" >
+
+        <TextView
+            android:id="@+id/oct_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_oct"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/output_oct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@color/LightGray"
+            android:clickable="true"
+            android:gravity="right"
+            android:onClick="onTextClick"
+            android:padding="5dp"
+            android:text="@string/text_zero"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+    
+    <!-- Keypad -->
+    <include layout="@layout/layout_keypad" />
+
+</LinearLayout>
